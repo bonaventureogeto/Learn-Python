@@ -20,3 +20,10 @@
 #     num = num + 1
 #     print("I love cars")
 
+
+# for loops
+
+num = 20
+
+for i in range(0, num):
+    print(i)
