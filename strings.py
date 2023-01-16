@@ -9,7 +9,7 @@ num = 490
 # str()
 
 number = (str(num))
-print(number + number) 
+print(number + number) # ans will be 490490
 
 # indexing 
 
@@ -29,7 +29,7 @@ print(list_greet)
 # for i in list_greet:
 #     print(i)
 
-print("-".join(list_greet))
+print(" ".join(list_greet))
 
 print(greetings.strip())
 
