@@ -64,12 +64,26 @@ inventory.display_inventory()
 
 
 """
-The above code creates a class Item with three attributes name, quantity, and price. It also creates a class InventoryManagementSystem with five methods add_item, remove_item, update_item, display_inventory, and save_inventory.
+The above code creates a class Item with three attributes name, quantity, and price. 
+It also creates a class InventoryManagementSystem with five methods add_item, 
+remove_item, update_item, display_inventory, and save_inventory.
 
-The add_item method allows the user to add a new item to the inventory by appending it to the inventory list. The remove_item method allows the user to remove an item from the inventory by looping through the inventory list and removing the item with the matching name. The update_item method allows the user to update the quantity or price of an item by looping through the inventory list and updating the matching item. The display_inventory method displays the current inventory by looping through the inventory list and printing the name, quantity, and price of each item.
 
-The save_inventory method saves the inventory to a CSV file. It opens the file in write mode, creates a csv.DictWriter object, and writes the header and the rows of the inventory to the file. The load_inventory method loads the inventory from a CSV file. It opens the file in read mode, creates a csv.DictReader object, and loops through the rows of the file to create Item objects and add them to the inventory list.
+The add_item method allows the user to add a new item to the inventory by appending it to the inventory list. 
+The remove_item method allows the user to remove an item from the inventory by looping through the inventory list and removing the item with the matching name. 
+The update_item method allows the user to update the quantity or price of an item by looping through the inventory list and updating the matching item. 
+The display_inventory method displays the current inventory by looping through the inventory list and printing the name, quantity, and price of each item.
 
-Finally, the code creates an instance of the InventoryManagementSystem class, adds two items to the inventory, displays the inventory, removes one item, updates another item, saves the inventory to a file, and loads the inventory from the file.
+The save_inventory method saves the inventory to a CSV file. 
+It opens the file in write mode, creates a csv.DictWriter object, 
+and writes the header and the rows of the inventory to the file. 
+The load_inventory method loads the inventory from a CSV file. 
+It opens the file in read mode, creates a csv.DictReader object, 
+and loops through the rows of the file to create Item objects and add them to the inventory list.
+
+Finally, the code creates an instance of the InventoryManagementSystem class, 
+adds two items to the inventory, displays the inventory, 
+removes one item, updates another item, saves the inventory to a file, 
+and loads the inventory from the file.
 
 """
