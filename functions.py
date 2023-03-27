@@ -1,12 +1,13 @@
 # These are functions in python
 
-# def greetings(name): # name is a parameter
-#     if name == "Bonaventure":
-#         print("Your name is Bonaventure")
-#     else:
-#         print("You are not Bonaventure")
-    
-# greetings("Bonaventure") # Bonaventure is an argument
+def greetings(name):  # name is a parameter
+    if name == "Bonaventure":
+        print("Your name is Bonaventure")
+    else:
+        print("You are not Bonaventure")
+
+
+greetings("bonaventure")  # Bonaventure is an argument
 
 
 # currency converter
@@ -17,5 +18,12 @@ def converter(amount, original_currency):
         print(amount*132.45)
     else:
         print("The currency is not USD or EURO")
-        
+
+
 converter(10, "EUR")
+
+# def greet(name):
+#     print("Hello ", name)
+
+
+# greet("Bonaventure")

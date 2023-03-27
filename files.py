@@ -1,9 +1,12 @@
-import os
+# import os
 
-file = open('words.txt', "r")
+# file = open('words.txt', "r")
 
-content = file.read()
+# print(file)
 
-print(content)
+# content = file.read()
 
+# print(content)
 
+with open("words.txt", "r") as file:
+    print(file.read())
