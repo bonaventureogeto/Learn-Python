@@ -3,11 +3,20 @@
 listNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
            11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
-listCars = ["Ford", "BMW", "Volvo"]
+print(len(listNum))
 
-print(listNum[0])
+carsTuple = ("Ford", "BMW", "Volvo")
 
-print(listNum[0])
+print(len(carsTuple))
+
+listNum[10] = 3264
+
+print(listNum[10])
+
+
+# carsTuple[0] = "Toyota"
+
+print(carsTuple[0])
 
 for i in listNum:
     if i % 2 == 0:
@@ -15,6 +24,10 @@ for i in listNum:
 
 for i in listNum:
     print(i**2)
+
+
+listNum.append("COOL")
+print(listNum)
 
 # listMty = []
 
@@ -41,17 +54,22 @@ car = {
     "year": 1964
 }
 
-# print(car["make"])
+print(car["make"])
 
 car["color"] = "red"
 
 # print(car)
 
+# dictionary of dictionaries
+
 cars = {
     "car1": {
-        "make": "Ford",
-        "model": "Mustang",
-        "year": 1964
+        "make": "Tesla",
+        "model": "Plaid",
+        "year": {
+            "year1": 2021,
+            "year2": 2022
+        }
     },
     "car2": {
         "make": "Ford",
@@ -60,7 +78,7 @@ cars = {
     },
 }
 
-print(cars["car1"]["year"])
+print(cars["car1"]["make"])
 
 m = []
 for car in cars:
