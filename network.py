@@ -6,11 +6,11 @@ response = requests.get("https://github.com/")
 print(response.status_code)
 # print(response.content)
 
-data = {'name': 'John', 'age': 30}
+# data = {'name': 'Alexa', 'age': 39}
 
-response = requests.post('https://httpbin.org/post', data=data)
+# response = requests.post('https://httpbin.org/post', data=data)
 
-print(response.status_code)
+# print(response.status_code)
 # print(response.content)
 
 
