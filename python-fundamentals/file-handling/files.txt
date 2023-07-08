@@ -1,0 +1,1 @@
+To write to a file, you must open it in write mode or append mode.
