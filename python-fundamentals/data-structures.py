@@ -61,53 +61,52 @@ element = listNum[len(listNum) - 1]
 
 # dictionary
 
-# car = {
-#     "make": "Ford",
-#     "model": "Mustang",
-#     "year": 1964
-# }
+car = {
+    "make": "Ford",
+    "model": "Model S",
+    "year": 2021
+}
 
-# print(car["make"])
+# print(car["year"])
 
-# car["color"] = "red"
+# car["make"] = "Tesla"
 
-# # print(car)
+# print(car)
 
 # # dictionary of dictionaries
 
-# cars = {
-#     "car1": {
-#         "make": "Tesla",
-#         "model": "Plaid",
-#         "year": {
-#             "year1": 2021,
-#             "year2": 2022
-#         }
-#     },
-#     "car2": {
-#         "make": "Ford",
-#         "model": "Mustang",
-#         "year": 1963
-#     },
-# }
+cars = {
+    "car1": {
+        "make": "Tesla",
+        "model": "Plaid",
+        "year": {
+            "year1": 2021,
+            "year2": 2022
+        }
+    },
+    "car2": {
+        "make": "Ford",
+        "model": "Mustang",
+        "year": 1963
+    },
+}
 
-# print(cars["car1"]["make"])
+# print(cars["car1"]["year"]["year2"])
 
-# m = []
+# m_list = []
 # for car in cars:
-#     print(cars[car]["make"])
 #     for k in cars[car]:
 #         yr = cars[car]["year"]
-#         m.append(yr)
+#         m_list.append(yr)
 
-# print(m)
+# print(m_list)
 
-# person = {
-#     "name": "John",
-#     "age": 30,
-#     "city": "New York",
-#     "married": True
-# }
+person = {
+    "name": "John",
+    "age": 30,
+    "city": "New York",
+    "married": True
+}
 
 # print(person)
 
@@ -115,12 +114,12 @@ element = listNum[len(listNum) - 1]
 # print(person["age"])
 # print(person["city"])
 
-# print(person.get("city"))
+# print(person.get("age"))
 
 # person["job"] = "Developer"
 # print(person.keys())
 # print(person.values())
 
-# person.update(car)
+cars.update(car)
 
-# print(person)
+print(cars)
