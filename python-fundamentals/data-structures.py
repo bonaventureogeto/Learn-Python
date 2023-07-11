@@ -1,7 +1,7 @@
 # list
 
 listNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-           11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 50]
+           11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
 
 # print(len(listNum))
 
@@ -9,12 +9,15 @@ carsTuple = ("Ford", "BMW", "Volvo")
 
 # print(len(carsTuple))
 
+first = listNum[0]
+# print(first)
+
 element = listNum[len(listNum) - 1]
 # print(element)
 
-# listNum[10] = 3264
+listNum[0] = 32
 
-# print(listNum[10])
+# print(listNum)
 
 # carsTuple[0] = "Toyota"
 
@@ -38,7 +41,7 @@ element = listNum[len(listNum) - 1]
 #     print(i**2)
 
 
-# listNum.append("COOL")
+listNum.append("COOL")
 # print(listNum)
 
 # # listMty = []

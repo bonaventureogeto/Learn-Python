@@ -1,24 +1,24 @@
-def square(x):
-    return x * x
+# def square(x):
+#     return x * x
 
 
-square(20)
+# print(square(20))
 
 
-def greeting():
-    print("Hello, World!")
+# def greeting():
+#     print("Hello, World!")
 
 
-greeting()
+# greeting()
 
 
-def numbers(n):
-    for i in range(1, n + 1):
-        if i % 2 == 0:
-            print(i)
+# def numbers(n):
+#     for i in range(1, n + 1):
+#         if i % 2 == 0:
+#             print(i)
 
 
-numbers(10000)
+# numbers(10000)
 
 # challenge 1: grading program
 # write a function that takes in the score of a student and returns/prints the grade of the student
