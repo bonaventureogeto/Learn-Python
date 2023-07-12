@@ -1,36 +1,42 @@
 # regular expressions in python
 import re
 
-# pattern = re.compile('^Hello')
-# result = pattern.finditer('Hello, World. Hello, John. Hello, Jane')
-# for match in result:
-#     print(match.start(), match.end(), match.group())
+pattern = re.compile('^Hello')
+result = pattern.finditer('Hello, World. Hello, John. Hello, Jane')
 
-# result = pattern.sub('Hi', 'Hello, World! Hello')
-# print(result)
+for match in result:
+    print(match.start(), match.end(), match.group())
 
-# pattern = re.compile('\d+')
-# result = pattern.findall('Here are some numbers: 42, 123, 5, 345, 546')
-# print(result)
+result = pattern.sub('Hi', 'Hello, World! Hello')
+print(result)
 
-# pattern = re.compile('(Hello) (\w+)')
-# result = pattern.search('Hello world!')
-# print(result.group(1))
-# print(result.group(2))
+# find numbers in a string
+pattern = re.compile('\d+')
+result = pattern.findall('Here are some numbers: 42, 123, 5, 345, 546')
+print(result)
+
+# find all words in a string
+pattern = re.compile('(Hello) (\w+)')
+result = pattern.search('Hello world!')
+print(result.group(1))
+print(result.group(2))
 
 
 # simple pattern matching
-# pattern = r"apple"
-# text = "I have an apple and a banana."
+pattern = r"apple"
+text = "I have an apple and a banana."
 
-# match = re.search(pattern, text)
-# if match:
-#     print("Pattern found!")
-# else:
-#     print("Pattern not found.")
+match = re.search(pattern, text)
+if match:
+    print("Pattern found!")
+else:
+    print("Pattern not found.")
+
+# finding kenyan number plates
+text = "My car's number plate is KBC-123A."
+
 
 # finding phone numbers
-
 text = "My phone number is 254-797-321-907."
 pattern = r"\d{3}-\d{3}-\d{3}-\d{3}"
 
