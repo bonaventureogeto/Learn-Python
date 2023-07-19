@@ -13,4 +13,17 @@ class Car:
         
 myCar = Car("Tesla", "Model S", 2021, 100000)
 
-print(myCar.stop())
+
+# inheritance
+
+class ElectricCar(Car):
+    def __init__(self, make, model, year, mileage, batterySize):
+        super().__init__(make, model, year, mileage)
+        self.batterySize = batterySize
+        
+    def charge(self):
+        return(f"Your {self.year} {self.make} {self.model} has been charged.")
+    
+myElectricCar = ElectricCar("Tesla", "Model S", 2021, 100000, 100)
+
+print(myElectricCar.charge())
