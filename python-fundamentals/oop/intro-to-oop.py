@@ -12,6 +12,7 @@ class Car:
         return(f"Screech!!! You have used up all {self.mileage} miles on your {self.year} {self.make} {self.model}.")
         
 myCar = Car("Tesla", "Model S", 2021, 100000)
+print(myCar.start())
 
 
 # inheritance
