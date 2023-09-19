@@ -16,3 +16,5 @@ number = 20
 num = 10.98
 
 print(num)
+
+# booleans - True, False
