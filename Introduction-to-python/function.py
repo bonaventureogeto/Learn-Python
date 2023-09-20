@@ -1,3 +1,4 @@
+# introduction to function
 def greet():
     print("Hello, Stranger!")
 
@@ -33,10 +34,17 @@ def person(age):
 person(14)
 
 
-def sum(num1, num2):
+def sum(num1, num2):  # a function that takes in two parameters
     print(num1 + num2)
 
 
 sum(34, 8)
 
 # write a function called product that prints the product of two numbers
+
+
+def product(num1, num2):
+    print(num1 * num2)
+
+
+product(129, 80)
