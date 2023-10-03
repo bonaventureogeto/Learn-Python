@@ -1,7 +1,7 @@
 import re
 
-text = "My phone number is 123-456-7890. \n The other one is 423-466-5670"
-pattern = r"\d{3}-\d{3}-\d{4}"
+text = "My phone number is +254-724-324-678."
+pattern = r"[+]\d{3}-\d{3}-\d{3}-\d{3}"
 
 match = re.search(pattern, text)
 if match:
