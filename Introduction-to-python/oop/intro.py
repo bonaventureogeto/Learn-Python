@@ -23,16 +23,19 @@ myPerson.greet()
 myPerson.cry()
 
 class Child(Person):
-    def __init__(self, name, age, occupation, country, race, age1, firstname):
+    def __init__(self, name, age, occupation, country, race):
         Person.__init__(self, name, age, occupation, country, race)
-        self.age1 = age1
-        self.firstname = firstname
         
     def hello(self):
         print(f'My name is {self.name}, I am from {self.country}')
         
-myChild = Child("Jack", 20, "Lab Technician", 'Kenya', 'Indian', 20, 'John')
+myChild = Child("Jack", 20, "Lab Technician", 'Kenya', 'Indian')
 
 print(myChild)
 
 print(myChild.hello())
+
+def hello(name):
+    name.hello()
+
+hello(myChild)
